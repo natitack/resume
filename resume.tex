@@ -1,0 +1,151 @@
+\documentclass[10pt]{article}
+
+\usepackage{type1cm}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+
+\newcommand{\triline}[3]{%
+    \parbox[t][][t]{.4\linewidth}{ #1 }%
+    \parbox[t][][t]{.4\linewidth}{ #2 }%
+    \parbox[t][][t]{.2\linewidth}{\raggedleft #3 }%
+    \vspace{1ex}
+}
+
+\newcommand{\publication}[3]{%
+    \parbox[t][][t]{.8\linewidth}{ #1 }%
+    \parbox[t][][t]{.05\linewidth}{ #2 }%
+    \parbox[t][][t]{.15\linewidth}{\raggedright #3 }%
+    \vspace{0.5ex}
+}
+
+\newcommand{\award}[3]{%
+    \parbox[t][][t]{.5\linewidth}{ #1 }%
+    \parbox[t][][t]{.4\linewidth}{ #2 }%
+    \parbox[t][][t]{.1\linewidth}{\raggedleft #3 }%
+}
+
+\newcommand{\bodypara}[1]{%
+    \hfill\begin{minipage}{\dimexpr\textwidth-3em}%
+    #1%
+    \end{minipage}%
+}
+
+\newlength{\listpostvertical}
+\setlength{\listpostvertical}{2ex}
+
+\geometry{letterpaper,left=.5in,right=.5in,top=0.5in,bottom=0.5in}
+\titleformat{\section}[hang]{}{}{0pt}{\raggedleft\textbf{\large #1}}[\vspace*{0.5ex}\titlerule]
+\titleformat{\subsection}[hang]{}{}{0pt}{\raggedleft\textbf{#1}}[\vspace*{0.5ex}\titlerule]
+\begin{document}
+\titlespacing*{\section}{0pt}{1ex}{2ex}
+\titlespacing*{\subsection}{0pt}{1ex}{2ex}
+
+\begin{center}
+{ \fontsize{0.6in}{0in}\selectfont Nathan Nelson } \\
+\vspace{1ex}
+{\large Looking for Summer 2024 Remote Internship Opportunities} \\
+\vspace{1ex}
+\makebox[\linewidth][s]{
+\parbox{0.33\linewidth}{\centering \href{mailto:nelsonna@oregonstate.edu}{\texttt{nelsonna@oregonstate.edu}}}
+\parbox{0.33\linewidth}{\centering \href{http://github.com/natitack}{%
+    \raisebox{-0.5ex}{\includegraphics[height=1em]{github.eps}} %
+    \texttt{@natitack}}}%
+\parbox{0.33\linewidth}{\centering \href{https://www.linkedin.com/in/nathanfnelson/}{%
+    \raisebox{-0.5ex}{\includegraphics[height=1em]{linkedin-bug.png}} %
+    \texttt{@nathanfnelson}}}%
+}
+\end{center}
+
+\section{Education}
+
+\triline{\textbf{Computer Science, B.S.}}{Oregon State University - Cascades}{Sep 2022 - Jun 2025}
+
+\begin{itemize}[nosep]
+\item Academic Excellence: Dean’s List Honoree
+\item Clubs: Officer of Hacker Refactor (ACM-W) Computer Science Club
+\item Relevant Coursework: Computer Architecture \& Assembly, Operating Systems, 
+    Technical Writing, Elements of Discrete Mathematics, Statistics for Engineers 
+
+\end{itemize}
+\vspace{\listpostvertical}
+
+\triline{\textbf{Computer Science, A.S. (transferred)}}{Foothill College, Los Altos Hills}{Jan 2019 - Sep 2021}
+
+\begin{itemize}[nosep]
+\item Academic Excellence: STEM Core Participant, Dean’s List Honoree
+\item Clubs: Artificial Intelligence and Statistics Club
+\item Relevant Coursework: Linux Shell Programming, Introduction to 
+    Amazon Web Services Cloud Computing, Introduction to Linux \& Unix, 
+    Advanced Data Structures \& Algorithms in Python, Introduction to Database Management Systems, Data Visualization
+\end{itemize}
+
+
+\section{Work Experience}
+
+\triline{\textbf{Google Cellular Operations Technician}}{Astreya, Mountain View}{Oct 2017 - Feb 2018}
+\begin{itemize}[nosep]
+\item Administered the maintenance, inventory, and deployment for thousands of Google’s refurbished corporate cellular devices for the Mountain View region. 
+\item Overhauled weekly audit and documentation best practices of cellular inventory to ensure accurate and honest reporting. 
+\item Provided technical support and customer service to 100+ users weekly via tickets, chat support, and walk-ins.
+
+\end{itemize}
+\vspace{\listpostvertical}
+
+\triline{\textbf{Technical Support Analyst \& \\ End User Trainer}}{Intermountain Healthcare, Salt Lake City}{Jul 2015 - Jul 2017}
+\vspace{\listpostvertical}
+
+\begin{itemize}[nosep]
+\item Supplied remote technical support to Intermountain Healthcare’s 
+    40,000 employees for a wide range of internal products, tools, and services.
+\item Coordinated a team of three staff members after hours for Incident Management
+     and compiled daily statistics of call volume for the service.
+\item Trained thirty Physicians and Nurse Practitioners in the use of iCentra, 
+    an electronic medical records application based on Cerner Millennium.
+\end{itemize}
+
+\section{Projects}
+
+\publication%
+    {
+    \textbf{ 
+    \href{https://github.com/natitack/leetcode}%
+          {Github @natitack/leetcode:}} Reopository to practice and represent programming abilities}%
+
+    {New - Ongoing}%
+    {2023}
+
+    \section{Volunteer Experience}
+
+    \triline{\textbf{Bend YIMBY Leader}}{Bend, Oregon}{2021 - Present}
+    \begin{itemize}[nosep]
+    \item Affordable Housing, Transportation, and sustainable community advocate. 
+    \item Orchestrates events within the organization and in collaboration with local groups, fostering community engagement
+    
+    \end{itemize}
+    \vspace{\listpostvertical}
+    
+    \triline{\textbf{City Council Meeting Notes \& \\ Campaign Volunteer}}{Bend, Oregon}{ Aug 2021 - Present}
+    \vspace{\listpostvertical}
+    
+    \begin{itemize}[nosep]
+    \item Publishes bi-monthly council meeting summaries under a pseudonym to encourage public involvement and educate residents about local politics.
+
+    \item Assists local candidates in gathering signatures and establishing their social media presence, strengthening their campaigns for local office.
+    \end{itemize}
+
+\section{Technical Skills}
+
+\begin{trivlist}
+    \item \textbf{Languages:}  C, Dart, Java, Javascript, Kotlin, Python, R, SQL, TypeScript
+    \item \textbf{Frameworks/Development Tools:} Amazon Web Services, Bash, Flutter, Git, GitHub, MySQL, React
+    \item \textbf{Workflow/Other:} Android Studio, Google Workspace, Joplin, Jupyter Notebook, Linux, Markdown, Microsoft 365, Obsidian, PyCharm, Test Driven Development, 
+    Vim, Visual Studio Code
+\end{trivlist}
+\end{document}
